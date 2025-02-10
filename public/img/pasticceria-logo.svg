@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Cerchio di sfondo con riempimento wheat -->
+    <circle cx="100" cy="100" r="90" fill="#F5DEB3" stroke="#8B4513" stroke-width="6" />
+    
+    <!-- Testo principale -->
+    <text x="100" y="90" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#8B4513" text-anchor="middle">Pasticceria</text>
+    
+    <!-- Nome del brand -->
+    <text x="100" y="125" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#D2691E" text-anchor="middle">Boolean</text>
+    
+    <!-- Numero aziendale -->
+    <text x="100" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#8B4513" text-anchor="middle">138</text>
+</svg>

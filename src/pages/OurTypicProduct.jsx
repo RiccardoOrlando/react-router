@@ -8,7 +8,7 @@ export default function OurTypicProducts() {
   console.log(menu)
 
   const fetchMenu = () => {
-    axios.get("http://localhost:3000/bacheca").then((response) => {
+    axios.get("http://localhost:3000/bacheca").then((response) => {   
       setMenu(response.data);
     });
   };
