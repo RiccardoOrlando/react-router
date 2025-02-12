@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link, Links } from "react-router-dom";
 
 
 export default function OurTypicProducts() {
@@ -17,13 +18,18 @@ export default function OurTypicProducts() {
 
   
 
-     return (
-    <>
+  return (
       <div className="container">
         {menu.map((user) => (
           <div key={user.id} className="card">
+            <Link to={`/BurgerFromId/${user.id}`}>
             <div className="user">
-              <img src={`http://localhost:3000/${user.image}`} alt="Avatar" />
+            {console.log(user.image)} {/* Aggiungi questo log per vedere il valore di user.image */}
+              {user.image ? (
+                <img src={`http://localhost:3000/${user.image}`} alt="Avatar" />
+              ) : (
+                <div className="placeholder">No Image Available</div>
+              )}
               <div className="container-content">
                 <h4>
                   <b>{user.name}</b>
@@ -31,9 +37,10 @@ export default function OurTypicProducts() {
                 <p>{user.ingredients}</p>
               </div>
             </div>
+            </Link>
           </div>
         ))}
       </div>
-    </>
+
   );
 }
